@@ -1,11 +1,11 @@
-About consolekit
-================
+About consolekit-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/consolekit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/domdfcoding/consolekit
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/consolekit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Additional utilities for click.
 
