@@ -1,5 +1,5 @@
 {% set name = "consolekit" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/consolekit-{{ version }}.tar.gz
-  sha256: 2009782cd118fcdf71231af452e791a8a6e1a260718bea2ee50ff193d4757ead
+  sha256: 55ea43e226863e1d618ec9b860c9842d84249d895c3376c03b158d8f3a335626
 
 build:
   noarch: python
