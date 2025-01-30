@@ -6,26 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/consolekit-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/consolekit-{{ version }}.tar.gz
   sha256: dea6b9f250369eab8823df56f921844071e56f5051ac059d8a150e890626727b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - flit-core >=3.2,<4
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - click >=7.1.2
     - colorama >=0.4.3
     - deprecation-alias >=0.1.1
     - domdf-python-tools >=3.8.0
     - mistletoe >=0.7.2
-    - python >=3.6
+    - python >={{ python_min }}
     - typing-extensions !=3.10.0.1,>=3.10.0.0
 
 test:
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/domdfcoding/consolekit
